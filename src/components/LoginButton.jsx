@@ -1,9 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { LoginContext } from '../hooks/UseContextComponent';
 
 const LoginButton = () => {
-  return (
-    <div>LoginButton</div>
-  )
-}
+  const [isLogin, setIsLogin] = useContext(LoginContext);
 
-export default LoginButton
+  const handleClick = () => {
+    setIsLogin((login) => !login);
+  };
+
+  return (
+    <li>
+      <a onClick={handleClick} className={`${!isLogin ? 'login' : 'logout'}`} href="#home">
+        {!isLogin ? 'Login' : 'Logout'}
+      </a>
+    </li>
+  );
+};
+
+export default LoginButton;

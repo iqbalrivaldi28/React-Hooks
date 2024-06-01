@@ -1,9 +1,18 @@
-import React from 'react'
+import React, { createContext, useState } from 'react';
+import Navbar from '../components/Navbar';
+import Page from '../components/Page';
+
+export const LoginContext = createContext();
 
 const UseContextComponent = () => {
-  return (
-    <div>UseContextComponent</div>
-  )
-}
+  const [isLogin, setIsLogin] = useState(false);
 
-export default UseContextComponent
+  return (
+    <LoginContext.Provider value={[isLogin, setIsLogin]}>
+      <Navbar />
+      <Page />
+    </LoginContext.Provider>
+  );
+};
+
+export default UseContextComponent;

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react';
+import { LoginContext } from '../hooks/UseContextComponent';
 
 const Page = () => {
-  return (
-    <div>Page</div>
-  )
-}
+  const [isLogin, setIsLogin] = useContext(LoginContext);
 
-export default Page
+  return (
+    <div className="container">
+      <div className="hooks mt-4">{isLogin ? 'You Are Login' : 'You Are Logout, please Login..'}</div>
+    </div>
+  );
+};
+
+export default Page;
