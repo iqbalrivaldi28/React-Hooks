@@ -1,6 +1,7 @@
 import './App.css';
 import UseEffectComponent from './hooks/UseEffectComponent';
 import UseEffectTodos from './hooks/UseEffectTodos';
+import UseLayoutEffect from './hooks/UseLayoutEffect';
 import UseReducerComponents from './hooks/UseReducerComponents';
 import UseStateComponent from './hooks/UseStateComponent';
 
@@ -21,7 +22,12 @@ function App() {
 
       <hr />
       <h3>Fetching API dengan useEffect</h3>
-      <UseEffectTodos />
+      {/* <UseEffectTodos /> */}
+
+      <hr />
+      <h3>Materi user Layout Effect</h3>
+      <UseLayoutEffect />
+      
     </>
 
   )
