@@ -5,13 +5,18 @@ const UseLayoutEffect = () => {
   const [sectionStyle, setSectionStyle] = useState({});
   const sectionRef = useRef();
 
+  //   useLayoutEffect(() => {
+  //     const random = Math.floor(Math.random() * 500);
+  //     for (let i = 0; i <= 100000000; i++){
+  //         if(i === 100000)
+  //             setSectionStyle({ paddingTop: `${random}px`})
+  //     }
+  //   }, [number])
+
   useLayoutEffect(() => {
     const random = Math.floor(Math.random() * 500);
-    for (let i = 0; i <= 100000000; i++){
-        if(i === 100000) 
-            setSectionStyle({ paddingTop: `${random}px`})
-    }
-  }, [number])
+    setSectionStyle({ paddingTop: `${random}px` });
+  }, [number]);
 
   return (
     <div className="container">
