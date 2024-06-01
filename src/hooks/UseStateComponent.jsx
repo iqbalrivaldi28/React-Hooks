@@ -11,8 +11,6 @@ const UseStateComponent = () => {
     setCount(count => count - 1)
   }
 
- 
-
   return (
     <div>
       <div className="hooks">useState</div>
