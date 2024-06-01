@@ -1,5 +1,6 @@
 import './App.css';
 import UseEffectComponent from './hooks/UseEffectComponent';
+import UseEffectTodos from './hooks/UseEffectTodos';
 import UseReducerComponents from './hooks/UseReducerComponents';
 import UseStateComponent from './hooks/UseStateComponent';
 
@@ -17,6 +18,10 @@ function App() {
       <hr />
       <h3>Materi use Effect</h3>
       <UseEffectComponent />
+
+      <hr />
+      <h3>Fetching API dengan useEffect</h3>
+      <UseEffectTodos />
     </>
 
   )
