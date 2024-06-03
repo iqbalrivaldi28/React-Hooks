@@ -4,6 +4,7 @@ import UseEffectComponent from './hooks/UseEffectComponent';
 import UseEffectTodos from './hooks/UseEffectTodos';
 import UseImperativeHandle from './hooks/UseImperativeHandle';
 import UseLayoutEffect from './hooks/UseLayoutEffect';
+import UseMemoComponent from './hooks/UseMemoComponent';
 import UseReducerComponents from './hooks/UseReducerComponents';
 import UseRefComponent from './hooks/UseRefComponent';
 import UseRefComponentDua from './hooks/UseRefComponentDua';
@@ -41,10 +42,15 @@ function App() {
       <UseRefComponent />
       <UseRefComponentDua /> */}
 
-      <hr />
+      {/* <hr />
       <h3>Materi use Imperative Handle</h3>
-      <UseImperativeHandle />
+      <UseImperativeHandle /> */}
 
+
+      <hr />
+      <h3>Materi use Memo</h3>
+      <UseMemoComponent />
+      
     </>
 
   )
