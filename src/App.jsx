@@ -3,6 +3,7 @@ import UseCallbackComponent from './hooks/UseCallbackComponent';
 import UseContextComponent from './hooks/UseContextComponent';
 import UseEffectComponent from './hooks/UseEffectComponent';
 import UseEffectTodos from './hooks/UseEffectTodos';
+import UseIdComponent from './hooks/UseIdComponent';
 import UseImperativeHandle from './hooks/UseImperativeHandle';
 import UseLayoutEffect from './hooks/UseLayoutEffect';
 import UseMemoComponent from './hooks/UseMemoComponent';
@@ -10,7 +11,6 @@ import UseReducerComponents from './hooks/UseReducerComponents';
 import UseRefComponent from './hooks/UseRefComponent';
 import UseRefComponentDua from './hooks/UseRefComponentDua';
 import UseStateComponent from './hooks/UseStateComponent';
-
 
 function App() {
   return (
@@ -33,7 +33,7 @@ function App() {
       {/* <hr />
       <h3>Materi user Layout Effect</h3>
       <UseLayoutEffect /> */}
-      
+
       {/* <hr />
       <h3>Materi use Context</h3>
       <UseContextComponent /> */}
@@ -51,13 +51,16 @@ function App() {
       <h3>Materi use Memo</h3>
       <UseMemoComponent /> */}
 
-      <hr />
+      {/* <hr />
       <h3>Materi use Callback</h3>
-      <UseCallbackComponent />
-      
-    </>
+      <UseCallbackComponent /> */}
 
-  )
+      <hr />
+      <h3>Materi use Id</h3>
+      <UseIdComponent />
+
+    </>
+  );
 }
 
 export default App;
