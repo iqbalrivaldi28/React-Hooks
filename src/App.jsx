@@ -1,4 +1,5 @@
 import './App.css';
+import UseCallbackComponent from './hooks/UseCallbackComponent';
 import UseContextComponent from './hooks/UseContextComponent';
 import UseEffectComponent from './hooks/UseEffectComponent';
 import UseEffectTodos from './hooks/UseEffectTodos';
@@ -46,10 +47,13 @@ function App() {
       <h3>Materi use Imperative Handle</h3>
       <UseImperativeHandle /> */}
 
+      {/* <hr />
+      <h3>Materi use Memo</h3>
+      <UseMemoComponent /> */}
 
       <hr />
-      <h3>Materi use Memo</h3>
-      <UseMemoComponent />
+      <h3>Materi use Callback</h3>
+      <UseCallbackComponent />
       
     </>
 
