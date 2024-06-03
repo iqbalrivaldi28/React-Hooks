@@ -4,6 +4,7 @@ import UseEffectComponent from './hooks/UseEffectComponent';
 import UseEffectTodos from './hooks/UseEffectTodos';
 import UseLayoutEffect from './hooks/UseLayoutEffect';
 import UseReducerComponents from './hooks/UseReducerComponents';
+import UseRefComponent from './hooks/UseRefComponent';
 import UseStateComponent from './hooks/UseStateComponent';
 
 
@@ -31,7 +32,13 @@ function App() {
       
       <hr />
       {/* <h3>Materi use Context</h3> */}
-      <UseContextComponent />
+      {/* <UseContextComponent /> */}
+
+      <hr />
+      {/* <h3>Materi use Ref</h3> */}
+      <UseRefComponent />
+
+
     </>
 
   )
